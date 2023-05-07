@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import MenuButton from "./MenuButton";
+import Menu from "./Menu";
 
 export default class MenuContainer extends Component{
     constructor(props) {
