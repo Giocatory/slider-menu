@@ -1,4 +1,6 @@
 import React, {Component} from "react";
+import MenuButton from "./MenuButton";
+
 export default class MenuContainer extends Component{
     constructor(props) {
         super(props);
@@ -23,7 +25,9 @@ export default class MenuContainer extends Component{
         });
     }
     render() {
-        return(
+        return([
+            <MenuButton handleMouseDown={this.handleMouseDown} />,
+            <Menu handleMouseDown={this.handleMouseDown} menuVisibility={this.state.visible}/>,
             <div>
                 <div>
                     <p>Найдешь пункт, который тут лишний?</p>
@@ -38,6 +42,6 @@ export default class MenuContainer extends Component{
                     </ul>
                 </div>
             </div>
-        )
+        ])
     }
 }
