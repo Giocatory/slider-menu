@@ -27,10 +27,10 @@ export default class MenuContainer extends Component{
     }
     render() {
         console.log('Menu Container rendered')
-        return([
-            <MenuButton handleMouseDown={this.handleMouseDown} />,
-            <Menu handleMouseDown={this.handleMouseDown} menuVisibility={this.state.visible}/>,
-            <div>
+        return(
+            <>
+                <MenuButton handleMouseDown={this.handleMouseDown} />
+                <Menu handleMouseDown={this.handleMouseDown} menuVisibility={this.state.visible}/>
                 <div>
                     <p>Найдешь пункт, который тут лишний?</p>
                     <ul>
@@ -43,7 +43,7 @@ export default class MenuContainer extends Component{
                         <li>Consecrate</li>
                     </ul>
                 </div>
-            </div>
-        ])
+            </>
+        )
     }
 }
