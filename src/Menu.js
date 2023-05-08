@@ -1,8 +1,9 @@
-import React, {Component} from "react";
+import React, {PureComponent} from "react";
 import "./Menu.css";
 
-export default class Menu extends Component{
+export default class Menu extends PureComponent{
     render() {
+        console.log('Menu rendered');
         let visibility = "hide";
 
         if (this.props.menuVisibility){

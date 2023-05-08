@@ -26,6 +26,7 @@ export default class MenuContainer extends Component{
         });
     }
     render() {
+        console.log('Menu Container rendered')
         return([
             <MenuButton handleMouseDown={this.handleMouseDown} />,
             <Menu handleMouseDown={this.handleMouseDown} menuVisibility={this.state.visible}/>,
